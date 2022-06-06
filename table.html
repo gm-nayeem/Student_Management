@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Management System</title>
+
+  <link rel="stylesheet" href="style.css">
+  
+</head>
+<body>
+
+  <h1 id="title">Student Management System</h1><br><br>
+
+  <fieldset style="width:720px; height: 200px" id="field_style">
+    <legend>Personal Information</legend>
+
+    <form action="#" method="post" class="form_style user-form">
+
+      <div>
+        <label class="lebel_style" for="id">ID:</label>
+        <input class="input_style" type="text" name="id" id="id" placeholder="Enter your name">
+      </div>
+
+      <div>
+        <label class="lebel_style" for="name">Name:</label>
+        <input class="input_style" type="text" name="name" id="name" placeholder="Enter your name">
+
+      </div>
+
+      <br>
+        
+      <div>
+        <label class="lebel_style" for="cgpa">CGPA:</label>
+        <input class="input_style" type="text" name="cgpa" id="cgpa" placeholder="Enter your name">
+      </div>
+    
+      <div>
+        <label class="lebel_style" for="dept">Dept:</label>
+        <input class="input_style" type="text" name="dept" id="dept" placeholder="Enter your name">
+      </div>    
+               
+      <button onclick="addRow()" class="btn_style">Add Data</button>
+      <input type="reset" value="Reset" class="btn_style btn">
+  
+    </form>
+
+  </fieldset>
+
+  
+
+    
+  <div class="container">
+    
+    <input type="search" oninput="filterTable(this, 'table_filter')" class="form_control" placeholder="Search table information">
+
+    <table class="_table table_sort">
+
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Name</th>
+          <th>CGPA</th>
+          <th>Department</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+
+      <tbody id="table_filter" class="table-body">
+
+
+      </tbody>
+
+    </table>
+
+  </div>
+     
+
+  <script src="index.js"></script>
+
+</body>
+</html>
